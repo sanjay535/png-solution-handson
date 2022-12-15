@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+body{
+  font-family: "Open Sans", sans-serif
+}
+.App {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Navbar */
+.nav {
+  background: coral;
+  height: 70px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav h2{
+  color: #f1f1f1;
+}
+/* User actions */
+.user__action{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* CARDS */
+.card {
+  margin: 20px;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  padding: 20px;
+  width: 600px;
+  min-height: 200px;
+  /* grid-template-rows: 20px 50px 1fr 50px; */
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.01);
+}
+.user__image {
+  margin: 10px 0;
+}
+.user__image img {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  max-width: 120px;
+  max-height: 120px;
+  border: 1px solid #fff;
+  padding-bottom: 5px;
+
+  border-radius: 50%;
+}
+.gender__age,
+.mail__phone {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+.mail {
+  margin-right: 10px;
+}
+.mail,
+.phone {
+  display: flex;
+  align-items: center;
+}
+.gender {
+  margin-right: 10px;
+}
+/* CARD BACKGROUNDS */
+
+.card-1 {
+  background: radial-gradient(#1fe4f5, #3fbafe);
+}
+
+.card-2 {
+  background: radial-gradient(#fbc1cc, #fa99b2);
+}
+
+.card-3 {
+  background: radial-gradient(#76b2fe, #b69efe);
+}
+
+.card-4 {
+  background: radial-gradient(#60efbc, #58d5c9);
+}
+
+.card-5 {
+  background: radial-gradient(#f588d8, #c0a3e5);
+}
+/* buttons */
+button {
+  background-color: coral;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 15px;
+  }
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+  .card{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+  }
+  .mail__phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px 0;
+  }
+}
